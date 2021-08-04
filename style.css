@@ -20,6 +20,8 @@
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
   
+  --bs: 0.25em 0.25em .75em rgba(0,0,0,.25), 
+        0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
 @media (min-width: 800px) {
@@ -33,13 +35,28 @@
 }
 
 /* General styles */
-.logo {
-  background-color: #111;
+
+html {
+  scroll-behavior: smooth;
 }
 
 
+.logo {
+  background-color: var(--clr-dark);
+}
+
+.header1 {
+  position: relative;
+  text-align:center;
+  background-color: var(--clr-dark);
+  background-image: url(/img/eng-mech2.jpg);
+  background-size: cover;
+  font-weight: bold;
+  color: var(--clr-dark);
+}
+
 .header {
-  background: #111;
+  background: var(--clr-dark);
   color: var(--clr-bg);
   text-align: center;
   padding: 2.5em 0;
@@ -63,8 +80,34 @@ img {
   max-width: 100%;
 }
 strong { font-weight: var(--fw-bold) }
-/* Typography */
 
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
+/* button */
+.buttons,
+.btn {
+  display: inline-block;
+  padding: .5em 2.5em;
+  background: orange;
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8rem;
+  text-transform: none;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+.buttons,
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Typography */
 h1,
 h2,
 h3 {
@@ -78,12 +121,6 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title {
   margin-bottom: .35em;
-}
-
-.section__title--intro {
-  strong { font-weight: var(--fw-bold) }
-  font-weight: var(--fw-reg);
-  
 }
 
 .section__title--intro strong {
@@ -109,14 +146,132 @@ h3 { font-size: var(--fs-h3) }
 
 
 /* Header */
-nav {display: none}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.logo {
+  max-width: 100px;
+
+}
+
+.nav {
+  position: fixed;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  font-size:  var(--fs-h2);
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: var(--clr-accent);
+}
+
+.nav-toggle {
+  padding: .5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  z-index: 1000;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
+
+
+
+.hamburger {
+  
+  display: block;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: var(--clr-accent);
+  width: 2em;
+  height: 3px;
+  border-radius: 1em;
+  transition: transform 250ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
+
 
 /* Intro section */
 .intro {
   position: relative;
   text-align:center;
-}
+  background-color: var(--clr-dark);
+  background-image: url(/img/eng_mech1.jpg);
+  background-size: cover;
+  font-weight: bold;
+  color: var(--clr-light);
 
+}
+.intro__img {
+  box-shadow: var(--bs) ;
+}
 @media (min-width: 600px) {
   .intro {
     display: grid;
@@ -150,14 +305,18 @@ nav {display: none}
 }
 
 .about-me {
-  max-width: 1000px;
+  
+  background-color: var(--clr-dark);
   margin: 0 auto;
+  color: #fff;
 }
 
 @media (min-width: 600px) {
+  
   .about-me {
+    
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 350px;
     grid-template-areas:
       "title img"
       "subtitle img"
@@ -167,6 +326,8 @@ nav {display: none}
 
 .section__title--about {
   grid-area: title;
+  text-align: left;
+  
 }
 
 .section__subtitle--about {
@@ -177,6 +338,7 @@ nav {display: none}
   width: calc(100% + 2em);
   padding-left: 1em;
   padding-right: calc(200px + 2em);
+  text-align: center;
 }
 
 .about-me__img {
@@ -191,11 +353,35 @@ nav {display: none}
   background-color: var(--clr-accent);
   color: var(--clr-light);
   text-align: center;
+  background-color: rgb(35, 184, 243);
+  background-image: url(/img/eng-mech3.jpg);
+  background-size: cover;
+  font-weight: bold;
+  
 }
+
+
+.my-technique {
+  background-color: var(--clr-dark);
+  color: white;
+  text-align: left;
+}
+
+.section__title--tech {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1em;
+}
+
+.section__subtitle--tech {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+}
+
 
 /* Footer */
 .footer {
-  background: #111;
+  background: black;
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
@@ -209,6 +395,7 @@ nav {display: none}
 
 .footer__link {
   font-weight: var(--fw-bold); 
+  
 }
 
 .footer__link:hover,
@@ -221,6 +408,7 @@ nav {display: none}
 }
 
 .social-list {
+  color: var(--clr-accent);
   list-style: none;
   display: flex;
   justify-content: center;
@@ -230,4 +418,5 @@ nav {display: none}
 
 .social-list__item {
   margin: 0 .5em;
+  color: var(--clr-accent);
 }

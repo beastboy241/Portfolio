@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--Code by Divinector - divinectorweb.com-->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -8,8 +7,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudfare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet"
-        href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-          integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
   <!-- google fonts -->
     
@@ -20,7 +18,6 @@
   </head>
   
   <body>
-      <script src="script.js"></script>
       <header>
         <div class="logo">
           <img src="img/logo.jfif" 
@@ -32,38 +29,32 @@
           </button>
         
           <nav class="nav">
-            <div class="banner-text">
+            <div class="nav__list">
               <ul>
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li	class="nav__item"><a href="#" class="nav__link">My Services</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+                <li	class="nav__item"><a href="#about" class="nav__link">About me</a><li>
+                <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                <li class="nav__item"><a href="#experience" class="nav__link">My Work</a></li>
               </ul>
             </div>
           </nav>
-          <section id="banner" style>
-          <div class="content">
-            <header class="header">
+        
+      </header>
+
+
+        <section  class="header1">
               <h2> Welcome to my porfolio website!</h2>
               <hr>
               <p style="max-width:700px">
                 <a href="https://drive.google.com/file/d/1URrLCNqWjQP3RUWtPrRK6MdpGBbtm4Ay/view?usp=sharing"
                    target="_blank" style="float:left;margin:5px 20px 5px 5px"
-                   class="button special">Resume</a>
+                   class="buttons">Resume</a>
                   "You can download my resume by clicking the button if you are in a rush. Otherwise, enjoy the slides"
               </p>
               
-            </header>
-          </div>
             
-        
+          
         </section>
-                   
-        
-        
-        
-        
-        </header>
     <!-- Introduction -->
           <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
@@ -75,30 +66,6 @@
             
                  
           </section>
-    <!-- My services -->
-    <section class="My-services" id="services">
-      <h2 class="section__title section "
-     
-      <div class="services">
-        <div class="service">
-            <h3> </h3>
-          <p>
-          </div> <!-- service -->
-      
-        <div class="service">
-            <h3> </h3>
-          <p>
-        </div> <!-- service -->
-        
-        <div class="service">
-          <h3> </h3>
-         <p>
-        </div> <!-- service -->
-     </div> <!-- sdsadasdsadsservice -->
-          
-    
-          
-    </section>
     
   
   
@@ -118,6 +85,8 @@
           
     </div>
     <img src="img/Loc&team.jpg" alt="Loc and team at racing track" class="about-me__img">
+
+    
   </section>
 
   <!-- My Work -->
@@ -147,19 +116,20 @@
         
   
 
-
+  <a href="https://www.utsa.edu/" class="btn">#edu at UTSA</a>
   </section>  
     
     
    
-    <section class="technical-experience" id="experience">
-      <h2 class="section__title">
+    <section class="my-technique" id="experience">
+      <h2 class="section__title--tech">
         Technical Experience
       </h2>
-<p class="section__subtitle"></p>
-      <div>
-          <p> Mechanical Engineering projects:
+      Mechanical Engineering projects: 
+      <p class="section__subtitle--tech"></p>
+            
             <ul>
+              
               <li> Completed senior project at SPLParts Company, a lower control arm for BMW E46</li>
               <li>Created building structure and perform finite element analysis by using ANSYS and SolidWorks</li>
               <li>Created and designed a steel hammer (Manufacture course in Spring 2019)</li>
@@ -170,35 +140,39 @@
               <li> Designed and developed porfolio website using html and Javascript</li> 
               </ul>
           </p>
-      </div>
+        
         
       
     </section>
     
+    <!-- footer -->
     <footer class="footer">
       <a href="mailto:nleo06265@gmail.com" class="footer__link">nleo06265@gmail.com</a>
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="social-list__link" href="https://www.facebook.com/profile.php?id=100002367388199">
-            <i class="fab fa-facebook"></i>
-          </a>
+          <a class="fa fa-linkedin" href="https://www.linkedin.com/in/loc-nguyen-441472202/">
+          </a> 
         </li>
         
         <li class="social-list__item">
-          <a class="social-list__link" href="https://www.linkedin.com/in/loc-nguyen-441472202/">
-            <i class="fab fa-linkedin"></i>
-          </a>
+          <a class="fa fa-github" href="https://github.com/beastboy241">
+          </a> 
         </li>
 
-
-
-
-
+        <li class="social-list__item">
+          <a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=100002367388199">
+          </a> 
+        </li>
+         
+        <li class="social-list__item">
+          <a class="fa fa-reddit" href="https://www.reddit.com/user/Puzzleheaded_Bag1860">
+          </a> 
+        </li>
 
       </ul>
     </footer>
     
-             
+    <script src="js/index.js"></script>
    
   
   </body>
