@@ -115,6 +115,7 @@ strong { font-weight: var(--fw-bold) }
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
+  
 }
 
 .buttons,
@@ -308,11 +309,11 @@ header {
   }
   .section__subtitle--intro {
     align-self: start;
-    grid-column: 1 / -1;
+    grid-column: -1 / 1;
     grid-row: 2;
-    text-align: right;
+    text-align: center;
     position: relative;
-    left: 5em;
+    left: 10em;
     width: calc(100% + 2em);
     padding-left: 1em;
     padding-right: calc(200px +2em);
@@ -386,6 +387,7 @@ header {
   color: var(--clr-accent);
   font-weight: var(--fw-bold);
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .section__subtitle--tech {
