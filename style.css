@@ -45,15 +45,29 @@ html {
   background-color: var(--clr-dark);
 }
 
+.header0 {
+  background-color: var(--clr-dark);
+  background-image:  url(/img/eng-mech1.jpg);
+  background-size: cover;
+}
+.section_subhead {
+  text-align: center;
+  color: white;
+}
 .header1 {
   position: relative;
-  text-align:center;
+  text-align: center;
   background-color: var(--clr-dark);
   background-image: url(/img/eng-mech2.jpg);
   background-size: cover;
   font-weight: bold;
   color: var(--clr-dark);
 }
+
+.section-header1 {
+  text-align: center;
+}
+
 
 .header {
   background: var(--clr-dark);
@@ -87,6 +101,7 @@ strong { font-weight: var(--fw-bold) }
 }
 
 /* button */
+
 .buttons,
 .btn {
   display: inline-block;
