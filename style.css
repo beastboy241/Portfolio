@@ -408,6 +408,10 @@ header {
   font-weight: var(--fw-bold);
 }
 
+.personal-info {
+  text-align: center;
+  font-weight: bold;
+}
 
 /* Footer */
 .footer {
