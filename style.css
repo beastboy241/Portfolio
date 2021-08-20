@@ -47,7 +47,7 @@ html {
 
 .header0 {
   background-color: var(--clr-dark);
-  background-image:  url('../blob/master/img/eng-mech1.JPG');
+  background-image:  url('../img/eng-mech1.jpg');
   background-size: cover;
 }
 .section_subhead {
@@ -58,7 +58,7 @@ html {
   position: relative;
   text-align: center;
   background-color: var(--clr-dark);
-  background-image: url('../blob/master/img/eng-mech2.JPG');
+  background-image: url('../img/eng-mech2.jpg');
   background-size: cover;
   font-weight: bold;
   color: var(--clr-dark);
@@ -290,7 +290,7 @@ header {
   position: relative;
   text-align:center;
   background-color: var(--clr-accent);
-  background-image: url('../blob/master/img/aero.JPG');
+  background-image: url('../img/aero.jpg');
   background-size:contain no repeat;
   font-weight: bold;
   color: var(--clr-light);
@@ -385,7 +385,7 @@ header {
   color: var(--clr-dark);
   text-align: center;
   background-color: rgb(35, 184, 243);
-  background-image: url('../blob/master/img/eng-mech3.JPG');
+  background-image: url('../img/eng-mech3.jpg');
   background-size: cover;
   font-weight: bold;
   
