@@ -118,10 +118,7 @@ strong { font-weight: var(--fw-bold) }
   
 }
 
-.name {
-  color: white;
-  font-weight: bold;
-}
+
 
 .buttons,
 .btn:hover {
@@ -322,6 +319,11 @@ header {
     z-index: 2;
    
   }
+
+  .section__title--name {
+    text-align: center;
+    color: white;
+  }
   .section__subtitle--intro {
     align-self: start;
     grid-column: 1 / -1;
@@ -384,8 +386,8 @@ header {
   background-color: var(--clr-accent);
   color: var(--clr-dark);
   text-align: center;
-  background-color: rgb(35, 184, 243);
-  background-image: url('../img/eng-mech3.jpg');
+  background-color: white;
+  
   background-size: cover;
   font-weight: bold;
   
