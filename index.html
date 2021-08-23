@@ -101,8 +101,8 @@
     <h2 class="section__title-edu">
       Education 
     </h2>
-    <p class="section__subtitle"></p>
-      <ul>
+    
+      <ul class="section__subtitle--edu">
         <li>Graduated in Mechanical Engineering (ME) with Minor in Computer Science (CS) in Fall 2020 </li>
         <li> Undergraduate Coursework 
             <ul>
@@ -127,41 +127,44 @@
   </section>  
     
     
-   
+ 
     <section class="my-technique" id="experience">
-      <h2 class="section__title--tech">
-        Technical Experience
-      </h2>
-      &ensp; Mechanical Engineering projects: 
-      <p class="section__subtitle--tech"></p>
+      <h2 class="section__title--tech"> Technical Experience </h2>
+     
+      <p class="section__subtitle--tech">
+        Mechanical Engineering projects:</p>
             
-      <table>
-        <tr id="heading">
-          <tr> <strong>Dates </strong> </tr>
-          <tr> <strong> Work </strong> </tr>
-        </tr>
-        <tr>
-          <td> 2020 </td>
-          <td>  Completed senior design projects at SPLParts Company, a lower control arm for BMW E46.</td>
-        </tr>
-        <tr>
-          <td> 2020 </td>
-          <td>  Created building structure and perform finite element analysis by using ANSYS and SolidWorks.</td>
-        </tr>
-        <tr>
-          <td>2019 </td>
-          <td>  Created and designed a steel hammer.</td>
-        </tr>
-    
-      </table>
       
-      &ensp; Computer Science projects:
-        <table>
-          <tr>
-            <td> 2017 </td>
-            <td> Created and developed a tool to manage and organize food recipes by using Java.</td>
-          </tr>
-        </table>
+  <table style="width: auto"; cellspacing="10" class="mech-exp">
+    <thead>
+      <tr> <strong> Dates </strong> </tr>
+      <tr> <strong> Work </strong> </tr>
+    </thead>
+    <tr>
+      <td> 2020 </td>
+      <td>Completed senior design projects at SPLParts Company, a lower control arm for BMW E46.</td>
+    </tr>
+    <tr>
+      <td> 2020 </td>
+      <td>Created building structure and perform finite element analysis by using ANSYS and SolidWorks.</td>
+    </tr>
+    <tr>
+      <td> 2019 </td>
+      <td>Created and designed a steel hammer.</td>
+    </tr>
+
+  </table>
+  <p class="section__subtitle--tech">Computer Science projects:</p>
+  <table cellspacing="10" class="cs-exp">
+    <tr>
+      <td> 2017 </td>
+      <td> Designed and developed a tool to manage and organize food recipes by using Java.</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>Designed and developed a hotel reservation website.</td>
+    </tr>
+  </table>
         
       
         
@@ -172,7 +175,7 @@
       <h2 class="section__title--personal">
         Personal information
       </h2>
-      <ul>
+      <ul class="pi-info">
         <li> Passion and commit to a lifetime of learning. </li>
         <li> <strong> Languages known:</strong>  English and Vietnamese.</li>
         <li> Areas of interest: Software development, Programming, Investment, Technical support, Robotics, Auto and Aerospace mechanics.</li>
@@ -185,8 +188,7 @@
 
     <!-- footer -->
     <footer class="footer">
-      <p> Contact me:
-      <a href="mailto:nleo06265@gmail.com" class="footer__link">nleo06265@gmail.com</a> </p>
+      <p> Contact me: </p>
       <ul class="social-list">
         <li class="social-list__item">
           <a class="fa fa-linkedin" href="https://www.linkedin.com/in/loc-nguyen-441472202/">
@@ -209,6 +211,16 @@
         </li>
 
       </ul>
+      <form class="" action="mailto:nleo06265@gmail.com" method="post" enctype="text/plain">
+        <label> Your name: </label>
+        <input type="text" name="yourName" value=""/> <br>
+        <label> Your email:</label>
+        <input type="text" name="yourEmail" value=""/> <br>
+        <label> Your message: </label> <br>
+        <textarea name="message" rows="10" cols="30"> </textarea>
+        <input type="submit" name="" />
+      </form>
+
     </footer>
     
     <script src="js/index.js"></script>
