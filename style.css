@@ -264,7 +264,7 @@ header {
 .hamburger::before,
 .hamburger::after {
   background: var(--clr-accent);
-  width: 2em;
+  width: 3em;
   height: 3px;
   border-radius: 1em;
   transition: transform 250ms ease-in-out;
@@ -291,7 +291,7 @@ header {
   background-image: url('../img/aero.jpg');
   background-size:contain no repeat;
   font-weight: bold;
-  color: var(--clr-light);
+  color: #EEEEEE;
   
   
 
