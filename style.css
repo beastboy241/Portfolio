@@ -251,9 +251,6 @@ header {
   opacity: 0;
 }
 
-
-
-
 .hamburger {
   
   display: block;
@@ -323,7 +320,7 @@ header {
 
   .section__title--name {
     text-align: center;
-    color: #EEEEEE;
+    color: var(--clr-dark);
   }
   .section__subtitle--intro {
     align-self: start;

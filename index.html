@@ -16,14 +16,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
   
   </head>
-  
+  <style>
+    body {
+      background-color: #393E46;
+    }
+    hr {
+      
+      border-style: none;
+      border-top-style: dotted;
+      border-color: #AAD8D3;
+      border-width: 5px;
+      width: 10%;
+    }
+  </style>
+
   <body>
       <header class="header0">
-        <div class="logo">
-          <img src="img/Locson.PNG" 
-               alt="" width="50" height=" 60">
-              
-        </div>
+        <table cellspacing="10" >
+          <tr>
+            <td>
+              <div class="logo">
+                <img src="img/Locson.PNG" 
+                  alt="" width="50" height=" 60">    
+              </div>
+            </td>
+            <td>
+                Hi, I am
+              <h3 class="section__title--name ">
+                 <strong>Loc Nguyen</strong>
+             </h3>
+            </td>
+          </tr>
+        </table>
+        
         
         
           <button class="nav-toggle" aria-label="toggle navigation">
@@ -56,17 +81,15 @@
                 target="_blank" style="float:center;margin:5px 20px 5px 5px"
                    class="buttons">My Resume</a>
               </p>
-              
-            
-          
+           
         </section>
+        
     <!-- Introduction -->
     <div class="aero" > 
           <section class="intro" id="home">
-            <h1 class="section__title--name ">
-               Hi, I am Loc Nguyen 
-              <hr>
-            </h1>
+            <h2 class="section__title--name" >
+                Loc Nguyen 
+            </h2>
             <p class="section__subtitle section__subtitle--intro">Mech engineer and front-end-dev</p>
             <img src="img/avatar.jpeg" alt="a picture of Loc nguyen"
                  class="intro__img">
@@ -75,7 +98,6 @@
           </section>
     
   
-  
   <!-- About me -->
   <section class="about-me" id="about">
     <h2 class="section__title section__title--about">
@@ -83,7 +105,7 @@
     </h2>
     <p class="section__subtitle section__subtitle--about"> Mechanical and Software Engineering</p>
       
-    <div class="about-me__body"
+    <div class="about-me__body">
           <p>
     &ensp; I enjoy in learning new things to improve my weakness. 
     I'm looking for a position where I can have the opportunity to use my assembling skill as 
@@ -97,6 +119,7 @@
   </section>
       </div>
   <!-- My Work -->
+  <hr/>
   <section class="my-education" id="education">
     <h2 class="section__title-edu">
       Education 
@@ -127,7 +150,7 @@
   </section>  
     
     
- 
+ <hr/>
     <section class="my-technique" id="experience">
       <h2 class="section__title--tech"> Technical Experience </h2>
      
@@ -170,10 +193,10 @@
         
       
     </section>
-    
+    <hr/>
     <section class="personal-info" id="personal">
       <h2 class="section__title--personal">
-        Personal information
+        Personal information 
       </h2>
       <ul class="pi-info">
         <li> Passion and commit to a lifetime of learning. </li>
