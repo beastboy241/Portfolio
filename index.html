@@ -10,12 +10,12 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
   <!-- google fonts -->
-  <link rel="icon" href="fav.ico">
+    <link rel="icon" href="fav.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
   
-  
+
   </head>
   <style>
     body {
@@ -42,10 +42,12 @@
               </div>
             </td>
             <td>
-                
               <h3 class="section__title--name ">
                  <strong>Loc Nguyen</strong>
              </h3>
+            </td>
+            <td>
+              <img class="code-img" src="img/code.png"
             </td>
           </tr>
         </table>
@@ -70,26 +72,28 @@
         
       </header>
 
-
-        <section  class="header1">  
+        <div class="header-top">
+            <img class="top-plane" src="img/airwhite.png" alt="Airplane">
+        <section  class="header1">
               <h2> Welcome to my porfolio website!</h2>
+              <hr>
               <p style="max-width: 700px">
                   <p class="section-header1">
                     "You can download my resume by clicking the button if you are in a rush. Otherwise, enjoy the slides"
                   </p>
-                 
                   <a href="resume2.1.pdf"
                 target="_blank" style="float:center;margin:5px 20px 5px 5px"
                    class="buttons">My Resume</a>
               </p>
-            
+              
         </section>
-        
+        <img class="bottom-plane" src="img/airplane.png" alt="airplane">
+        </div>
     <!-- Introduction -->
     <div class="aero" > 
           <section class="intro" id="home">
             <h2 class="section__title--name" >
-                Hi, I am Loc Nguyen 
+                Hi, I'm Loc 
             </h2>
             <p class="section__subtitle section__subtitle--intro">Mech engineer and front-end-dev</p>
             <img src="img/avatar.jpeg" alt="a picture of Loc nguyen"
@@ -98,8 +102,9 @@
                  
           </section>
     
-  
+  </div>
   <!-- About me -->
+  <div class="about">
   <section class="about-me" id="about">
     <h2 class="section__title section__title--about">
        Who I am ? 
@@ -107,6 +112,8 @@
     <p class="section__subtitle section__subtitle--about"> Mechanical and Software Engineering</p>
       
     <div class="about-me__body">
+      <img src="img/Loc&team.jpg" alt="Loc and team at racing track" class="about-me__img">
+
           <p>
     &ensp; I enjoy in learning new things to improve my weakness. 
     I'm looking for a position where I can have the opportunity to use my assembling skill as 
@@ -114,12 +121,12 @@
           </p>
           
     </div>
-    <img src="img/Loc&team.jpg" alt="Loc and team at racing track" class="about-me__img">
-
     
-  </section>
-      </div>
+    </section>
+    </div>
+
   <!-- My Work -->
+  <div class="edu">
   <hr/>
   <section class="my-education" id="education">
     <h2 class="section__title-edu">
@@ -144,13 +151,14 @@
         </li>
     </ul>    
     
-        
-  
-
   <a href="https://www.utsa.edu/" class="btn">#edu at UTSA</a>
   </section>  
-    
-    
+  </div>  
+  
+
+<!--Exp section-->
+
+<div class="exp">
  <hr/>
     <section class="my-technique" id="experience">
       <h2 class="section__title--tech"> Technical Experience </h2>
@@ -194,11 +202,17 @@
         
       
     </section>
+  </div>
+
+  <!--info-->
+  <div class="info">
     <hr/>
+    
     <section class="personal-info" id="personal">
       <h2 class="section__title--personal">
         Personal information 
       </h2>
+      
       <ul class="pi-info">
         <li> Passion and commit to a lifetime of learning. </li>
         <li> <strong> Languages known:</strong>  English and Vietnamese.</li>
@@ -209,11 +223,14 @@
 
     </section>
 
-
+    </div>
     <!-- footer -->
     <footer class="footer">
+      
       <p> Contact me: </p>
+      
       <ul class="social-list">
+        <img class="response-img" src="img/responsive.png">
         <li class="social-list__item">
           <a class="fa fa-linkedin" href="https://www.linkedin.com/in/loc-nguyen-441472202/">
           </a> 
@@ -236,13 +253,14 @@
 
       </ul>
       <form class="" action="mailto:nleo06265@gmail.com" method="post" enctype="text/plain">
+        
         <label> Your name: </label>
         <input type="text" name="yourName" value=""/> <br>
         <label> Your email:</label>
         <input type="text" name="yourEmail" value=""/> <br>
         <label> Your message: </label> <br>
         <textarea name="message" rows="10" cols="30"> </textarea>
-        <input type="submit" name="" />
+        <input type="submit" name="" value="Send" />
       </form>
 
     </footer>

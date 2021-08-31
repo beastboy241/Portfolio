@@ -45,6 +45,12 @@ html {
   background-color: var(--clr-dark);
 }
 
+.code-img {
+  width: 20%;
+  right: 70px;
+  position: absolute;
+  top: 3px;
+}
 .header0 {
   background-color: #AAD8D3;
   background-size: cover;
@@ -62,6 +68,18 @@ html {
   color: var(--clr-accent);
 }
 
+.top-plane {
+  width: 15%;
+  left: 100px;
+  position: relative;
+}
+
+.bottom-plane {
+  width: 20%;
+  position: relative;
+  left: 600px;
+  
+}
 .section-header1 {
   text-align: center;
   color: var(--clr-bg);
@@ -279,6 +297,13 @@ header {
 
 
 /* Intro section */
+.aero {
+  
+  margin: 100px auto 100px auto;
+  
+
+}
+
 .intro {
   position: relative;
   text-align:center;
@@ -340,6 +365,12 @@ header {
     padding-right: calc(200px +2em); 
   }
 }
+.about {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
 
 .about-me {
   
@@ -348,43 +379,20 @@ header {
   color: #EEEEEE;
 }
 
-@media (min-width: 600px) {
-  
-  .about-me {
-    
-    display: grid;
-    grid-template-columns: 1fr 350px;
-    grid-template-areas:
-      "title img"
-      "subtitle img"
-      "text img";
-  }
-}
 
-.section__title--about {
-  grid-area: title;
-  text-align: center;
-  
-}
-
-.section__subtitle--about {
-  grid-column: 1 / -1;
-  grid-row: 2;
-  position: relative;
-  left: -1em;
-  width: calc(100% + 2em);
-  padding-left: 1em;
-  padding-right: calc(200px + 2em);
-  text-align: center;
-}
 
 .about-me__img {
-  grid-area: img;
-  position: relative;
-  z-index: 2;
+  width: 50%;
+  float: left;
+  margin-right: 30px;
 }
 
 /* Education */
+.edu {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  line-height: 2;
+}
 
 .my-education {
   background-color: #393e46;
@@ -398,6 +406,12 @@ header {
 }
 .section__subtitle--edu {
   text-align: left;
+}
+
+.exp {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  line-height: 2;
 }
 
 .my-technique {
@@ -418,6 +432,11 @@ header {
   font-weight: bold;
 }
 
+.info {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  line-height: 2;
+}
 
 .mech-exp,
 .cs-exp {
@@ -432,6 +451,8 @@ header {
   text-align: center;
   
 }
+
+
 
 .pi-info {
   color: #EEEEEE;
@@ -478,4 +499,19 @@ header {
 .social-list__item {
   margin: 0 .5em;
   color: var(--clr-accent);
+}
+.response-img {
+  width: 10%;
+  float: left;
+  margin-right: 40px;
+  
+}
+
+input[type=submit] {
+  padding: 5px 15px;
+  background: var(--clr-accent);
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
