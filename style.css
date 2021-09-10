@@ -308,7 +308,7 @@ header {
   position: relative;
   text-align:center;
   background-color: var(--clr-accent);
-  background-image: url('../img/aero.jpg');
+  background-image: url('./img/aero.jpg');
   background-size:contain no repeat;
   font-weight: bold;
   color: #EEEEEE;
@@ -364,8 +364,7 @@ header {
     padding-left: 40em;
     padding-right: calc(200px +2em); 
   }
-}
-.about {
+  .about {
   width: 50%;
   margin: 100px auto 100px auto;
   text-align: left;
@@ -451,6 +450,9 @@ header {
   text-align: center;
   
 }
+
+}
+
 
 
 
