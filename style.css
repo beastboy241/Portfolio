@@ -364,7 +364,11 @@ header {
     padding-left: 40em;
     padding-right: calc(200px +2em); 
   }
-  .about {
+
+}
+@media only screen and (max-width: 600em)  {
+
+.about {
   width: 50%;
   margin: 100px auto 100px auto;
   text-align: left;
@@ -455,11 +459,7 @@ header {
   color: #EEEEEE;
   font-weight: bold;
 }
-
 }
-
-
-
 
 
 /* Footer */
